@@ -6,11 +6,20 @@
 
 body {
     background-color: black;
-    color: #fff;
+    color: white;
     font-size: 16px;
 }
 
 header {
+
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 600px;
+    gap: 50px;
+
     & img {
         width: 250px;
     }
