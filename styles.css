@@ -78,6 +78,15 @@ section {
                 justify-content: end;
                 align-items: end;
                 gap: 20%;
+
+                & .car-information {
+                    font-weight: bold;
+                }
+
+                & h2 {
+                    font-size: 8em;
+                    line-height: 1em;
+                }
             }
         }
 
