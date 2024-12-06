@@ -87,16 +87,68 @@ section {
                     font-size: 8em;
                     line-height: 1em;
                 }
+
+                & .description {
+                    color: #d9d9d9;
+                    font: 12px;
+                    text-align: right;
+                    max-width: 400px;
+
+                }
+
+                & .information {
+                    border-radius: 30px;
+                    height: 35px;
+                    width: 120px;
+                    text-transform: uppercase;
+                    border: 2px solid #791fd3;
+                    background-color: #beff1b;
+                    color: black;
+                    cursor: pointer;
+                    font-weight: bold;
+                }
             }
         }
 
     }
-}
 
-.arrows {
-    & button {
-        & img {
-            width: 100px;
+    .arrows {
+        & button {
+            & img {
+                width: 100px;
+            }
         }
     }
+
+    .indicators {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 200px;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        gap: 15px;
+
+        & .number {
+            font-size: 5em;
+        }
+
+        & .ul {
+            display: flex;
+            gap: 10px;
+
+            & li {
+                width: 50px;
+                height: 5px;
+                background-color: #beff1b;
+                border-radius: 5px;
+            }
+        }
+    }
+
+
 }
+
