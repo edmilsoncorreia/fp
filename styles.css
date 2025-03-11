@@ -31,6 +31,8 @@ header {
     gap: 100px;
     z-index: 2;
 
+    border: 1px solid green;
+
     & img {
         width: 250px;
     }
@@ -78,9 +80,10 @@ section {
                 height: 100%;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: end;
                 align-items: end;
                 gap: 20%;
+
 
                 & .car-information {
                     font-weight: bold;
@@ -111,8 +114,6 @@ section {
                     cursor: pointer;
                     font-weight: bold;
                     font-family: "League Gothic", sans-serif;
-
-
 
                 }
             }
@@ -188,6 +189,7 @@ section {
         & ul {
             display: flex;
             gap: 10px;
+            border: 1px solid yellow;
 
             & li {
                 width: 50px;
@@ -254,6 +256,7 @@ section {
                 & .car-information, h2, .description, .information {
                     transform: translateX(0);
                     opacity: 1;
+
                 }
             }  
         }
