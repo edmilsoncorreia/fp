@@ -6,13 +6,11 @@
 
     font-family: "Poppins", sans-serif;
 
-    border: 1px solid red;
-
 }
 
 body {
-    background-color: black;
-    color: white;
+    background-color: #000000;
+    color: #fff;
     font-size: 16px;
 
     overflow: hidden;
@@ -30,8 +28,6 @@ header {
     grid-template-columns: 1fr 600px;
     gap: 100px;
     z-index: 2;
-
-    border: 1px solid green;
 
     & img {
         width: 250px;
@@ -84,9 +80,6 @@ section {
                 align-items: end;
                 gap: 20px;
 
-                border: 1px solid white;
-
-
                 & .car-information {
                     font-weight: bold;
                 }
@@ -112,7 +105,7 @@ section {
                     text-transform: uppercase;
                     border: 2px solid #791fd3;
                     background-color: #beff1b;
-                    color: black;
+                    color: #000000;
                     cursor: pointer;
                     font-weight: bold;
                     font-family: "League Gothic", sans-serif;
@@ -170,7 +163,7 @@ section {
         }
     }
 
-    .indicators {
+    .indicators { 
         position: absolute;
         top: 50%;
         left: 50%;
@@ -191,7 +184,6 @@ section {
         & ul {
             display: flex;
             gap: 10px;
-            border: 1px solid yellow;
 
             & li {
                 width: 50px;
