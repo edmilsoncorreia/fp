@@ -10,13 +10,33 @@ let lastPosition = items.length -1
 
 
 nextButton.onclick = () => {
+
+    //Tentativa Alterar Active Dots
+
+
     let itemOld = container.querySelector('.list .item.active')
     itemOld.classList.remove ('active')
+
+    //let liOld = indicators.querySelector('ul li.active')
+    //liOld.classList.remove ('active')
     
-    active = active + 1 > lastPosition ? 0 : active + 1
+    active = active >= lastPosition ? 0 : active + 1
+
     items[active].classList.add('active')
+
+    //dots[active].classList.add('.active')
+
+    console.log(active)
 }
 
 prevButton.onclick = () => {
-    console.log ("PREV")   
+    let itemOld = container.querySelector('.list .item.active')
+    itemOld.classList.remove ('active')
+
+    active = active <= firstPosition ? lastPosition : active - 1
+    items[active].classList.add('active')
+
+    console.log(active)
+
+    
 }
