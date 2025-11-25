@@ -9,6 +9,20 @@ let active = 0
 let firstPosition = 0
 let lastPosition = items.length -1
 
+indicator.querySelector ('.number').innerHTML = active + 1
+
+/*Entender Melhor
+document.addEventListener('keydown', (e) => {
+    if (e.key === "ArrowRight") {
+        nextButton.click()      // seta → chama next
+    }
+
+    if (e.key === "ArrowLeft") {
+        prevButton.click()      // seta ← chama prev
+    }
+})
+*/
+
 nextButton.onclick = () => {
     let itemOld = container.querySelector('.list .item.active')
     itemOld.classList.remove ('active')
